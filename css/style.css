@@ -3,6 +3,16 @@ body {
 
 .opening {
   height: 100vh; }
+  .opening * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .opening .top {
-    background-color: yellow;
-    height: 50vh; }
+    width: 100%;
+    background-color: #ffca28;
+    height: 50%; }
+  .opening .bottom {
+    height: 50%; }
+    .opening .bottom img {
+      width: 60%; }

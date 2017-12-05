@@ -9,9 +9,22 @@ body {
 }
 
 .opening {
+    * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
     height: 100vh;
     .top {
-             background-color: yellow;
-             height: 50vh;
+        width: 100%;
+        background-color: $yellow;
+        height: 50%;
+    }
+    .bottom {
+        height: 50%;
+        img {
+            width: 60%;
+        }
     }
 }
