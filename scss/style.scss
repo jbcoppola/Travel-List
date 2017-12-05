@@ -1,0 +1,17 @@
+﻿$yellow: #ffca28;
+$green: #8bc34a;
+$red: #ff825c;
+$tan: #fff9c5;
+$blue: #8fe5f7;
+
+body {
+    margin: 0;
+}
+
+.opening {
+    height: 100vh;
+    .top {
+             background-color: yellow;
+             height: 50vh;
+    }
+}

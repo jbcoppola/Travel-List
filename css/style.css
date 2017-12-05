@@ -1,0 +1,8 @@
+body {
+  margin: 0; }
+
+.opening {
+  height: 100vh; }
+  .opening .top {
+    background-color: yellow;
+    height: 50vh; }
