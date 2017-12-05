@@ -58,12 +58,15 @@ body {
             align-content: center;
             width: 100%;
             img {
-                width: 100px;
+                align-self: center;
+                max-height: 100px;
+                max-width: 100px;
+                width: 40%;
             }
             p {
+                width: 60%;
                 font-size: 40px;
-                padding-top: 10px;
-                padding-left: 10px;
+                padding-left: 15px;
             }
         }
     }
