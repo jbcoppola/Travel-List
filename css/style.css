@@ -2,6 +2,13 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif; }
 
+.triangle-down {
+  height: 0;
+  width: 0;
+  border-top: 35px solid transparent;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent; }
+
 .opening {
   height: 100vh; }
   .opening .top {
@@ -16,11 +23,7 @@ body {
     align-items: center;
     height: 50%; }
     .opening .bottom .triangle-down {
-      height: 0;
-      width: 0;
-      border-top: 35px solid #ffca28;
-      border-right: 30px solid transparent;
-      border-left: 30px solid transparent; }
+      border-top-color: #ffca28; }
     .opening .bottom img {
       width: 60%; }
 
@@ -29,11 +32,19 @@ body {
   flex-direction: column;
   align-items: center; }
   .main .section {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    width: 100%; }
+    flex-direction: column;
+    justify-content: center; }
+    .main .section .bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      margin-top: -35px; }
+    .main .section .triangle-down {
+      z-index: 2;
+      align-self: center; }
     .main .section img {
       align-self: center;
       max-height: 100px;
@@ -43,3 +54,23 @@ body {
       width: 60%;
       font-size: 40px;
       padding-left: 15px; }
+  .main .section:nth-of-type(2) .bar {
+    background-color: #ffca28; }
+  .main .section:nth-of-type(2) .triangle-down {
+    border-top-color: #ffca28; }
+  .main .section:nth-of-type(3) .bar {
+    background-color: #8fe5f7; }
+  .main .section:nth-of-type(3) .triangle-down {
+    border-top-color: #8fe5f7; }
+  .main .section:nth-of-type(4) .bar {
+    background-color: #8bc34a; }
+  .main .section:nth-of-type(4) .triangle-down {
+    border-top-color: #8bc34a; }
+  .main .section:nth-of-type(5) .bar {
+    background-color: #fff9c5; }
+  .main .section:nth-of-type(5) .triangle-down {
+    border-top-color: #fff9c5; }
+  .main .section:nth-of-type(6) .bar {
+    background-color: #ff825c; }
+  .main .section:nth-of-type(6) .triangle-down {
+    border-top-color: #ff825c; }

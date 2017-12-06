@@ -12,9 +12,18 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.triangle-down {
+    height: 0;
+    width: 0;
+    border-top: $triangle-height solid transparent;
+    border-right: $triangle-width solid transparent;
+    border-left: $triangle-width solid transparent;
+}
+
 .opening {
     * {
     }
+
     height: 100vh;
 
     .top {
@@ -29,17 +38,11 @@ body {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        
         height: 50%;
 
         .triangle-down {
-            height: 0;
-            width: 0;
-            border-top: $triangle-height solid $yellow;
-            border-right: $triangle-width solid transparent;
-            border-left: $triangle-width solid transparent;
+            border-top-color: $yellow;
         }
-
 
         img {
             width: 60%;
@@ -47,26 +50,92 @@ body {
     }
 }
 
-    .main {
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .section {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        .section {
+        justify-content: center;
+
+        .bar {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-content: center;
-            width: 100%;
-            img {
-                align-self: center;
-                max-height: 100px;
-                max-width: 100px;
-                width: 40%;
-            }
-            p {
-                width: 60%;
-                font-size: 40px;
-                padding-left: 15px;
-            }
+
+            margin-top:-$triangle-height
+        }
+
+        .triangle-down {
+            z-index: 2;
+            align-self: center;
+        }
+
+        img {
+            align-self: center;
+            max-height: 100px;
+            max-width: 100px;
+            width: 40%;
+        }
+
+        p {
+            width: 60%;
+            font-size: 40px;
+            padding-left: 15px;
         }
     }
+
+    .section:nth-of-type(2) {
+        .bar {
+            background-color: $yellow;
+        }
+
+        .triangle-down {
+            border-top-color: $yellow;
+        }
+    }
+
+    .section:nth-of-type(3) {
+        .bar {
+            background-color: $blue;
+        }
+
+        .triangle-down {
+            border-top-color: $blue;
+        }
+    }
+
+    .section:nth-of-type(4) {
+        .bar {
+            background-color: $green;
+        }
+
+        .triangle-down {
+            border-top-color: $green;
+        }
+    }
+
+    .section:nth-of-type(5) {
+        .bar {
+            background-color: $tan;
+        }
+
+        .triangle-down {
+            border-top-color: $tan;
+        }
+    }
+
+    .section:nth-of-type(6) {
+        .bar {
+            background-color: $red;
+        }
+
+        .triangle-down {
+            border-top-color: $red;
+        }
+    }
+}
