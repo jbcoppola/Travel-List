@@ -37,6 +37,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
     padding: 5px;
     height: 40px;
     margin-bottom: 35px; }
@@ -51,6 +52,14 @@ body {
       width: 30px; }
     .main .status-bar .travel-bar-icon .icon-bottom {
       width: 40px; }
+    .main .status-bar .progress-bar {
+      margin-top: 4px;
+      border: 4px solid black;
+      height: 16px;
+      width: 50vw; }
+    .main .status-bar .progress-numbers {
+      font-size: 22px;
+      font-weight: bold; }
   .main .section {
     width: 100%;
     display: flex;
