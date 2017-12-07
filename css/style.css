@@ -30,7 +30,27 @@ body {
 .main {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center; }
+  .main .status-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    height: 40px;
+    margin-bottom: 35px; }
+    .main .status-bar .travel-bar-icon div {
+      background-color: black;
+      border-radius: 4px;
+      height: 4px;
+      margin-top: 6px; }
+    .main .status-bar .travel-bar-icon .icon-top {
+      width: 20px; }
+    .main .status-bar .travel-bar-icon .icon-middle {
+      width: 30px; }
+    .main .status-bar .travel-bar-icon .icon-bottom {
+      width: 40px; }
   .main .section {
     width: 100%;
     display: flex;

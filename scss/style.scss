@@ -53,7 +53,38 @@ body {
 .main {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
+
+    .status-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        padding: 5px;
+        height: 40px;
+        margin-bottom: $triangle-height;
+
+        .travel-bar-icon {
+            
+            div {
+                background-color: black;
+                border-radius: 4px;
+                height: 4px;
+                margin-top: 6px;
+            }
+            .icon-top {
+                width: 20px;
+            }
+            .icon-middle {
+                width: 30px;
+            }
+            .icon-bottom {
+                width: 40px;
+            }
+        }
+    }
 
     .section {
         width: 100%;
